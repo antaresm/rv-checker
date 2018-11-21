@@ -18,6 +18,12 @@ import (
 
 func init() {
 	raven.SetDSN("http://e32dc25e8ede495c8945351b87f84677:97c1902842e74b12b848a6300ca009cc@sentry.headsandhands.ru:9000/2")
+	
+	raven.config('http://e32dc25e8ede495c8945351b87f84677:97c1902842e74b12b848a6300ca009cc@sentry.headsandhands.ru:9000/2"',
+	 {
+		release: '0e4fdef81448dcfa0e16ecc4433ff3997aa53572'
+	});
+
 }
 
 func main(){
